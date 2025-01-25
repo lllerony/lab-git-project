@@ -1,6 +1,9 @@
 package utils
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func Add(a, b int) int {
 	return a + b // Добавляем +2 для конфликта
@@ -19,4 +22,8 @@ func Divide(a, b int) (int, error) {
 		return 0, fmt.Errorf("Division by zero")
 	}
 	return a / b, nil
+}
+
+func Power(a float64, b float64) float64 {
+	return math.Pow(a, b)
 }

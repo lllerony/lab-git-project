@@ -3,7 +3,7 @@ package utils
 import "fmt"
 
 func Add(a, b int) int {
-	return a + b
+	return a + b // Добавляем +2 для конфликта
 }
 
 func Subtract(a, b int) int {

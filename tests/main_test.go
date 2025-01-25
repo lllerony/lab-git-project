@@ -40,3 +40,20 @@ func TestDivide(t *testing.T) {
 		t.Error("Divide(10, 0) should return an error")
 	}
 }
+
+func TestPower(t *testing.T) {
+	result := utils.Power(2, 3)
+	if result != 8 {
+		t.Errorf("Power(2, 3) = %.2f; want 8", result)
+	}
+
+	result = utils.Power(3, 2)
+	if result != 9 {
+		t.Errorf("Power(3, 2) = %.2f; want 9", result)
+	}
+
+	result = utils.Power(5, 0)
+	if result != 1 {
+		t.Errorf("Power(5, 0) = %.2f; want 1", result)
+	}
+}

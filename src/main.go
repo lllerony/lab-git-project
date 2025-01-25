@@ -24,4 +24,5 @@ func main() {
 		fmt.Printf("Quotient: %d\n", quotient)
 	}
 	fmt.Printf("Power: %.2f\n", power)
+	fmt.Printf("Done!")
 }

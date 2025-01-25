@@ -13,6 +13,7 @@ func main() {
 	diff := utils.Subtract(a, b)
 	product := utils.Multiply(a, b)
 	quotient, err := utils.Divide(a, b)
+	power := utils.Power(float64(a), float64(b))
 
 	fmt.Printf("Sum: %d\n", sum)
 	fmt.Printf("Difference: %d\n", diff)
@@ -22,4 +23,5 @@ func main() {
 	} else {
 		fmt.Printf("Quotient: %d\n", quotient)
 	}
+	fmt.Printf("Power: %.2f\n", power)
 }
